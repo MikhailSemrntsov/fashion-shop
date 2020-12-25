@@ -1,0 +1,283 @@
+@media ( max-width: 1200px )
+  .container
+    max-width: 1000px
+  .navbar
+    padding: 0 50px
+    &-menu
+      &__wrapper
+        margin-left: 0
+
+    &__menu
+      padding-left: 0
+  .main
+    padding: 0 20px
+
+  .novelties
+    &-wrapper
+      display: block
+    &-images
+      margin-left: auto
+      margin-right: auto
+    &__new-collection
+      max-width: 650px
+      margin-left: auto
+      margin-right: auto
+
+@media( max-width: 992px )
+  .header
+    padding-bottom: 50px
+  .container
+    max-width: 900px
+  .navbar
+    &__menu
+      &--item
+        margin-left: 20px
+    &__button
+      width: 90px
+      height: 40px
+
+  .novelties
+    &-wrapper
+      display: block
+      padding-top: 76px
+    &__new-collection
+      max-width: 650px
+      padding-top: 35px
+      padding-right: 0
+    &__link
+      margin-top: 22px
+    &-images
+      width: 670px
+      margin-left: auto
+      margin-right: auto
+
+@media (max-width: 768px)
+  .container
+    max-width: 672px
+
+  .navbar
+    display: none
+    &__visible
+      display: block
+      display: flex
+      flex-direction: column
+      position: fixed
+      left: 0
+      top: 60px
+      right: 0
+      bottom: 0
+      z-index: 60
+      align-items: center
+      justify-content: end
+      background-color: #ffffff
+      height: 100%
+    &__menu
+      flex-direction: column
+      margin-left: 0
+      margin-bottom: 20px
+      margin-top: 10px
+      font-size: 20px
+    &__icon-close
+      display: block
+    &-menu
+      &__wrapper
+        padding-top: 20px
+    &__button
+      width: 250px
+      height: 55px
+  .button
+    &__menu
+      display: block
+      display: flex
+      width: 44px
+      height: 18px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      cursor: pointer
+      outline: none
+      background-color: #fff
+      &--mobile
+        width: 21px
+        height: 2px
+        background-color: #3A4C66
+        display: block
+  .logo-header
+    width: 91px
+    height: 28px
+    margin-left: 9px
+    &__media
+      display: flex
+      align-items: center
+      justify-content: space-between
+  .logo__menu
+    display: none
+  .main
+    &-container
+      max-width: 728px
+      min-height: 624px
+      background-image: url(../img/main-background-768.jpg)
+
+    &-contain
+      max-width: 728px
+      min-height: 624px
+      padding: 26px 0 0px 29px
+    &__tagline
+      top: 35px
+      left: 27px
+      &--text
+    &__heading
+      top: 28px
+      &--title
+        font-size: 48px
+        line-height: 60px
+    &__text
+      max-width: 434px
+      font-size: 18px
+      line-height: 32px
+      top: 20px
+      &--text
+        font-size: 18px
+        letter-spacing: 0.05px
+    &__button
+      padding: 15px 0px 13px 0px
+      top: 37px
+  .advantages
+    top: 63px
+    &__item
+      margin-right: 18px
+
+  .novelties
+    &-wrapper
+      display: block
+      padding-top: 76px
+    &__new-collection
+      max-width: 650px
+      padding-top: 35px
+      padding-right: 0
+    &__link
+      margin-top: 22px
+    &__title
+
+@media (max-width: 576px)
+  .container
+    max-width: 500px
+@media (max-width: 480px)
+  .container
+    max-width: 290px
+  .header
+    padding-bottom: 44px
+    padding-top: 16px
+  .navbar
+    &__visible
+      top: 10px
+      width: 304px
+      height: 322px
+      justify-content: space-between
+      margin-left: auto
+      margin-right: auto
+      padding-left: 23px
+      padding-right: 20px
+      align-items: flex-start
+    &-menu
+      &__wrapper
+        padding-top: 0
+    &__menu
+      margin-bottom: 13px
+      margin-top: 0
+      align-items: end
+    &__button
+      width: 256px
+      height: 40px
+    &__icon-close
+      background-color: #fff
+      width: 24px
+      height: 24px
+      margin-left: inherit
+  .main
+    padding: 0
+    min-height: 899px
+    &-container
+      max-width: 480px
+      min-height: 898px
+      border-radius: 0
+      &:after
+        content: ''
+        position: absolute
+        width: 10px
+        height: 100%
+        top: 0
+        bottom: 0
+        left: 0
+
+        background-color: #E8EAE9
+
+    &-contain
+      max-width: 480px
+      min-height: 898px
+      padding: 26px 0 0px 0px
+    &__tagline
+      width: 196px
+      height: 24px
+      top: 355px
+      left: 0px
+      letter-spacing: 0
+      margin: auto
+      position: relative
+    &__heading
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 40px
+      text-align: center
+      letter-spacing: 0.2px
+      top: 349px
+      left: 0px
+      margin: auto
+      &--title
+        font-size: 34px
+        line-height: 40px
+        letter-spacing: -0.9px
+    &__text
+      max-width: 260px
+      font-size: 17px
+      line-height: 28px
+      top: 350px
+      left: 0px
+      text-align: center
+      margin: auto
+      &--text
+        font-size: 16px
+        letter-spacing: 0px
+    &__button
+      width: 257px
+      height: 48px
+      padding: 11px 0px 13px 0px
+      top: 358px
+      left: 0px
+      font-size: 16px
+      line-height: 22px
+      letter-spacing: 0
+      margin: auto
+      display: block
+      &-wrapper
+        margin: auto
+  .advantages
+    max-width: 480px
+    flex-wrap: wrap
+    top: 361px
+    left: 0px
+    margin-left: 22px
+    &__item
+      margin-right: 18px
+      &:nth-child(3)
+        margin-top: 16px
+        margin-left: 81px
+    &__img
+      margin-right: 8px
+      width: 24px
+      height: 24px
+    &__wrapper
+      margin: auto
