@@ -27,7 +27,7 @@ $(document).ready(function () {
     $(this).addClass("category__text--active");
   });
 
-  // swiper-slider
+  // swiper-slider customs
 
   var mySwiper = new Swiper(".swiper-container", {
     // Optional parameters
@@ -41,5 +41,18 @@ $(document).ready(function () {
     // autoplay: {
     //   delay: 2000,
     // },
+  });
+
+  // swiper-slider stories
+  var mySwiper = new Swiper("stories__swiper-container", {
+    // Optional parameters
+    direction: "vertical",
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 });
