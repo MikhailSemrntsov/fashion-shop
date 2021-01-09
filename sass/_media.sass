@@ -214,6 +214,11 @@
 @media (max-width: 576px)
   .container
     max-width: 500px
+  .cards
+    &__product
+      width: 230px
+    &__more
+      width: 230px
 @media (max-width: 480px)
   .container
     max-width: 290px
@@ -336,6 +341,7 @@
     &-images
       max-width: 290px
       display: block
+      padding-top: 64px
       &__left
         max-width: 320px
         height: 300px
@@ -346,11 +352,14 @@
       &__right-top 
         width: 138px
         height: 97px
+        padding-top: 0
       &__right-down
         width: 138px
-        height: 97px   
+        height: 97px
+        padding-top: 0
+  
     &-wrapper
-      padding-top: 64px
+      padding-top: 0px
     &__title
       font-style: normal;
       font-weight: bold;
@@ -374,3 +383,53 @@
       font-size: 16px;
       line-height: 22px;
       text-align: center;
+  .products
+    padding-top: 40px
+  .trends
+    &__title
+      font-size: 28px;
+      line-height: 36px;
+    &__category
+      width: 218px
+      padding-top: 3px
+      &--text
+        font-size: 16px;
+        line-height: 22px;
+  .cards
+    &-wrapper
+      max-width: 290px
+      padding-top: 35px
+    &__product
+      width: 140px
+      height: 234px
+      margin-bottom: 20px
+    &__img
+      height: 170px
+    &__name
+      font-size: 16px;
+      line-height: 20px;
+      padding-left: 0
+    &__name-wrapper
+      margin-top: 10px
+    &__shopping
+      justify-content: start
+      padding: 4px 8px 0px 0px;
+    &__price
+      font-size: 14px;
+      line-height: 24px;
+      margin-right: 8px
+    &__shopping-cart
+    &__icon
+      height: 14px
+    &__more
+      width: 140px
+      height: 170px
+      &--text
+        font-size: 17px;
+        line-height: 20px;
+        width: 140px
+        top: 85px
+        left: 0
+      &--further
+        width: 25px
+        top: 44px
