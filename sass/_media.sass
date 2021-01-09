@@ -22,6 +22,15 @@
       max-width: 650px
       margin-left: auto
       margin-right: auto
+  .products
+    &-wrapper
+      
+
+  .cards
+    &__wrapper
+    
+    &__product
+      width: 240px
 
 @media( max-width: 992px )
   .header
@@ -149,20 +158,59 @@
     &__item
       margin-right: 18px
 
-  .novelties
-    &-images
-      max-width: 670px
+ 
     &-wrapper
       display: block
       padding-top: 76px
     &__new-collection
-      max-width: 650px
+      max-width: 95%
       padding-top: 35px
       padding-right: 0
     &__link
       margin-top: 22px
     &__title
+  .products
+    padding-top: 35px
+    &-wrapper
+      max-width: 608px
+      margin: auto
+  .trends
+    &__wrapper
+      display: block
+    &__title
+      text-align: center
+      margin-bottom: 25px;
+    &__title-wrapper
+      margin: auto
+    &__category
+      margin: auto
+  .cards
+    &-wrapper
+      max-width: 608px
+      margin: auto
+      padding-top: 56px
+    &__product
+      width: 280px
+      margin-bottom: 48px
+    &__more
+      width: 280px
 
+@media (max-width: 690px)
+ .novelties
+    &-images
+      max-width: 95%
+      &__left
+        min-width: 100%
+      &__right-top
+        max-width: 100%;
+        height: 350px;
+        padding-top: 20px
+      &__right-down
+        max-width: 100%;
+        height: 350px;
+        padding-top: 20px
+      display: block
+      padding-top: 76px
 @media (max-width: 576px)
   .container
     max-width: 500px

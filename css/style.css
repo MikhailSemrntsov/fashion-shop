@@ -879,6 +879,9 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+  .cards__product {
+    width: 240px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1054,20 +1057,70 @@ body {
   .advantages__item {
     margin-right: 18px;
   }
-  .novelties-images {
-    max-width: 670px;
-  }
-  .novelties-wrapper {
+  .advantages-wrapper {
     display: block;
     padding-top: 76px;
   }
-  .novelties__new-collection {
-    max-width: 650px;
+  .advantages__new-collection {
+    max-width: 95%;
     padding-top: 35px;
     padding-right: 0;
   }
-  .novelties__link {
+  .advantages__link {
     margin-top: 22px;
+  }
+  .products {
+    padding-top: 35px;
+  }
+  .products-wrapper {
+    max-width: 608px;
+    margin: auto;
+  }
+  .trends__wrapper {
+    display: block;
+  }
+  .trends__title {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .trends__title-wrapper {
+    margin: auto;
+  }
+  .trends__category {
+    margin: auto;
+  }
+  .cards-wrapper {
+    max-width: 608px;
+    margin: auto;
+    padding-top: 56px;
+  }
+  .cards__product {
+    width: 280px;
+    margin-bottom: 48px;
+  }
+  .cards__more {
+    width: 280px;
+  }
+}
+
+@media (max-width: 690px) {
+  .novelties-images {
+    max-width: 95%;
+    display: block;
+    padding-top: 76px;
+  }
+  .novelties-images__left {
+    min-width: 100%;
+  }
+  .novelties-images__right-top {
+    max-width: 100%;
+    height: 350px;
+    padding-top: 20px;
+  }
+  .novelties-images__right-down {
+    max-width: 100%;
+    height: 350px;
+    padding-top: 20px;
   }
 }
 
