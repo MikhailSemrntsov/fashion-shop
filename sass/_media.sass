@@ -23,6 +23,8 @@
       margin-left: auto
       margin-right: auto
   .products
+    max-width: 98%
+    margin: auto
     &-wrapper
       
 
@@ -30,6 +32,8 @@
     &__wrapper
     
     &__product
+      width: 240px
+    &__more
       width: 240px
 
 @media( max-width: 992px )
@@ -59,7 +63,11 @@
       width: 670px
       margin-left: auto
       margin-right: auto
-
+  .swiper-container 
+    width: 600px;
+    height: 389px;
+  .swiper-pagination
+    padding-bottom: 10px
 @media (max-width: 768px)
   .container
     max-width: 672px
@@ -182,7 +190,7 @@
       margin-bottom: 25px;
     &__title-wrapper
       margin: auto
-    &__category
+  .category
       margin: auto
   .cards
     &-wrapper
@@ -194,7 +202,19 @@
       margin-bottom: 48px
     &__more
       width: 280px
-
+  .swiper-container 
+    width: 630px;
+    height: 415px;
+  .swiper-pagination
+    padding-bottom: 70px
+  .customs
+    &-wrapper
+      padding-top: 43px;
+  .slider
+    &__text
+      padding-top: 33px
+      &-none
+        display: none
 @media (max-width: 690px)
  .novelties
     &-images
@@ -219,6 +239,16 @@
       width: 230px
     &__more
       width: 230px
+  .swiper-container 
+    width: 430px;
+    height: 415px;
+  .swiper-pagination
+    padding-bottom: 0px
+  .slider
+    &__text
+      padding-top: 33px
+      &-none480
+        display: none
 @media (max-width: 480px)
   .container
     max-width: 290px
@@ -389,12 +419,12 @@
     &__title
       font-size: 28px;
       line-height: 36px;
-    &__category
-      width: 218px
-      padding-top: 3px
-      &--text
-        font-size: 16px;
-        line-height: 22px;
+  .category
+    width: 218px
+    padding-top: 3px
+    &__text
+      font-size: 16px;
+      line-height: 22px;
   .cards
     &-wrapper
       max-width: 290px
@@ -433,3 +463,25 @@
       &--further
         width: 25px
         top: 44px
+  .quote
+    &__img
+      width: 70px
+      height: 60px
+  .swiper-container 
+    width: 280px;
+    height: 555px;
+  .swiper-pagination
+    padding-bottom: 63px
+  .slider
+    &__text
+      font-size: 18px;
+      line-height: 36px;
+      text-align: center;
+      letter-spacing: 0.12px;
+      padding-top: 14px
+      padding-bottom: 24px;
+      &-none480
+        display: none
+    &__name
+      width: 145px
+      margin: auto
