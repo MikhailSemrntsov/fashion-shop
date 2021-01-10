@@ -1,6 +1,7 @@
 .monitoring
   width: 392px
   height: 417px
+  position: relative
   &__top
     font-weight: 600;
     font-size: 14px;
@@ -28,25 +29,88 @@
     line-height: 36px;
     color: #5A7184;
     &-wrapper
-.stories
+.slider
+  &__background
+    background-color: #fff
+  &-text__text
+    font-family: 'HK Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.133333px;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    width: 275px;
+.swiper-slide
+  &__wrapper
+    width: 312px
+    height: 178px
+.stories  
+  
   &-wrapper
+    max-width: 1150px
+    margin: auto
     display: flex
     justify-content: space-between
-  &__swiper-container
-    width: 662px
-    height: 475px
-.swiper-slide
+  
+  
+    &-img
+      width: 317px
+      height: 312px
+    &-background
+      width: 312px
+      height: 317px
+      background-color: #fff    
+    &-wrapper  
+      width: 322px
+      height: 475px
+.stories-slider
+  width: 662px
+  height: 475px
+.sliders__swiper-wrapper
+  width: 662px
+  height: 475px
   display: flex
-
-  &__wrapper
-    width: 322px
-    height: 475px
-.slider
-  &__img
-    width: 317px
-    height: 312px
-  &__background
-    width: 312px
-    height: 317px
-    background-color: #fff
-
+  justify-content: space-between;
+// .swiper-slide
+ 
+//   width: 662px
+//   height: 475px
+// .sliders
+//   &-slider
+//   &-container
+//     width: 662px
+//     height: 475px
+//   &__swiper-wrapper
+//     display: flex
+.slider-button--prev
+  position: absolute  
+  background-image: url(../img/arrow-prev.svg)
+  background-repeat: no-repeat
+  background-size: 56px
+  background-position: center
+  background-color: transparent
+  color: #959EAD
+  width: 60px
+  height: 60px
+  cursor: pointer
+  z-index: 100
+  left: 0px
+  border: none
+.slider-button--next
+  position: absolute  
+  background-image: url(../img/arrow-next.svg)
+  background-repeat: no-repeat
+  background-size: 56px
+  background-position: center
+  background-color: transparent
+  color: #959EAD;
+  width: 60px
+  height: 60px
+  cursor: pointer
+  z-index: 100
+  left: 200px
+  border: none
+  

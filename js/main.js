@@ -27,9 +27,9 @@ $(document).ready(function () {
     $(this).addClass("category__text--active");
   });
 
-  // swiper-slider customs
+  // swiper-slider customs 1
 
-  var mySwiper = new Swiper(".swiper-container", {
+  var customSwiper = new Swiper(".customs-slider", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
@@ -38,21 +38,24 @@ $(document).ready(function () {
     pagination: {
       el: ".swiper-pagination",
     },
-    // autoplay: {
-    //   delay: 2000,
-    // },
+    autoplay: {
+      delay: 7000,
+    },
   });
 
-  // swiper-slider stories
-  var mySwiper = new Swiper("stories__swiper-container", {
+  // swiper-slider stories 2
+
+  var storiesSwiper = new Swiper(".stories-slider", {
     // Optional parameters
-    direction: "vertical",
     loop: true,
 
     // Navigation arrows
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".slider-button--next",
+      prevEl: ".slider-button--prev",
     },
+    // autoplay: {
+    //   delay: 7000,
+    // },
   });
 });

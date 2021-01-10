@@ -882,7 +882,7 @@ body {
   height: 70px;
 }
 
-.swiper-container {
+.customs-slider {
   width: 800px;
   height: 389px;
 }
@@ -915,6 +915,7 @@ body {
 .monitoring {
   width: 392px;
   height: 417px;
+  position: relative;
 }
 
 .monitoring__top {
@@ -949,7 +950,31 @@ body {
   color: #5A7184;
 }
 
+.slider__background {
+  background-color: #fff;
+}
+
+.slider-text__text {
+  font-family: 'HK Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.133333px;
+  padding-top: 24px;
+  padding-bottom: 30px;
+  width: 275px;
+}
+
+.swiper-slide__wrapper {
+  width: 312px;
+  height: 178px;
+}
+
 .stories-wrapper {
+  max-width: 1150px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -958,31 +983,68 @@ body {
           justify-content: space-between;
 }
 
-.stories__swiper-container {
-  width: 662px;
-  height: 475px;
-}
-
-.swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.swiper-slide__wrapper {
-  width: 322px;
-  height: 475px;
-}
-
-.slider__img {
+.stories-wrapper-img {
   width: 317px;
   height: 312px;
 }
 
-.slider__background {
+.stories-wrapper-background {
   width: 312px;
   height: 317px;
   background-color: #fff;
+}
+
+.stories-wrapper-wrapper {
+  width: 322px;
+  height: 475px;
+}
+
+.stories-slider {
+  width: 662px;
+  height: 475px;
+}
+
+.sliders__swiper-wrapper {
+  width: 662px;
+  height: 475px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider-button--prev {
+  position: absolute;
+  background-image: url(../img/arrow-prev.svg);
+  background-repeat: no-repeat;
+  background-size: 56px;
+  background-position: center;
+  background-color: transparent;
+  color: #959EAD;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 100;
+  left: 0px;
+  border: none;
+}
+
+.slider-button--next {
+  position: absolute;
+  background-image: url(../img/arrow-next.svg);
+  background-repeat: no-repeat;
+  background-size: 56px;
+  background-position: center;
+  background-color: transparent;
+  color: #959EAD;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 100;
+  left: 200px;
+  border: none;
 }
 
 @media (max-width: 1200px) {
