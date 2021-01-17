@@ -29,6 +29,11 @@
     &--active
       color: #183B56;
       font-weight: bold;
+.cards__more-further
+      position: absolute
+      top: 125px
+      left: 50%
+      transform: translateX(-50%);
 .cards
   
   &-wrapper
@@ -75,11 +80,7 @@
     border-radius: 8px
     &-wrapper
       position: relative
-    &--further
-      position: absolute
-      top: 125px
-      left: 50%
-      transform: translateX(-50%);
+
     &--text
       width: 216px
       height: 64px
@@ -97,6 +98,20 @@
     width: 260px
     height: 441px
     border-radius: 8px
+    
+    flex-direction: column
+  &-best
+    min-height: 995px    
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-top: 12px
     display: none
-.cards__product--active
+  &-soon
+    min-height: 995px    
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-top: 12px
+    display: none
+.cards__product-active
   display: flex
+ 

@@ -16,15 +16,19 @@ $(document).ready(function () {
   // tabs
 
   var tabsCategory = $(".category__text");
-  var tabsCards = $(".cards__product");
+  var tabsCards = $(".cards-wrapper");
+  var tabsBest = $(".cards-best");
+  var tabsSoon = $(".cards-soon");
 
   tabsCategory.on("click", function (event) {
-    event.preventDefault();
     var activeContent = $(this).attr("data-target");
-    tabsCards.removeClass("cards__product--active");
+    tabsCards.removeClass("cards__product-active");
     tabsCategory.removeClass("category__text--active");
-    $(activeContent).addClass("cards__product--active");
+    tabsBest.removeClass("cards__product-active");
+    tabsSoon.removeClass("cards__product-active");
+    $(activeContent).addClass("cards__product-active");
     $(this).addClass("category__text--active");
+    event.preventDefault();
   });
 
   // swiper-slider customs 1
@@ -38,9 +42,9 @@ $(document).ready(function () {
     pagination: {
       el: ".swiper-pagination",
     },
-    autoplay: {
-      delay: 7000,
-    },
+    // autoplay: {
+    //   // delay: 7000,
+    // },
   });
 
   // swiper-slider stories 2
