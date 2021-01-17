@@ -43,7 +43,7 @@ $(document).ready(function () {
       el: ".swiper-pagination",
     },
     // autoplay: {
-    //   // delay: 7000,
+    //   delay: 7000,
     // },
   });
 
