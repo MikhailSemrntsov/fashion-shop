@@ -1030,6 +1030,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 111px;
+  padding-bottom: 149px;
 }
 
 .stories-wrapper-img {
@@ -1099,6 +1100,95 @@ body {
   left: 74px;
   border: none;
   outline: none;
+}
+
+.subscription {
+  width: 100%;
+  min-height: 338px;
+  background-image: url(../img/subscription.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.subscription__title {
+  width: 332px;
+  font-family: HK Grotesk, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+
+.subscription__text {
+  width: 440px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.subscription-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 57px;
+  padding-right: 63px;
+}
+
+.email {
+  width: 447px;
+  height: 56px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.email__form {
+  border: none;
+  float: right;
+  padding-top: 4px;
+  padding-right: 4px;
+}
+
+.email__img {
+  margin-right: 5px;
+}
+
+.email__input {
+  border: none;
+  width: 216px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #959EAD;
+}
+
+.email__button {
+  width: 177px;
+  height: 47px;
+  border-radius: 4px;
+  background-color: #183B56;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.email__second {
+  display: none;
 }
 
 @media (max-width: 1200px) {
@@ -1220,6 +1310,20 @@ body {
   }
   .slider__background {
     top: 297;
+  }
+  .subscription-wrapper {
+    display: block;
+  }
+  .subscription__title {
+    margin: auto;
+    width: 441px;
+  }
+  .subscription__text {
+    margin: auto;
+  }
+  .email {
+    margin: auto;
+    margin-top: 30px;
   }
 }
 
@@ -1447,6 +1551,7 @@ body {
   .stories-wrapper {
     display: block;
     padding-top: 76px;
+    padding-bottom: 87px;
   }
   .monitoring {
     width: 560px;
@@ -1479,6 +1584,24 @@ body {
   }
   .slider__background {
     top: 297;
+  }
+  .subscription-wrapper {
+    padding-top: 67px;
+    padding-right: 0;
+  }
+  .subscription {
+    min-height: 402px;
+  }
+  .subscription__title {
+    padding-left: 28px;
+  }
+  .subscription__text {
+    padding-left: 0px;
+    padding-top: 19px;
+    text-align: center;
+  }
+  .email {
+    margin-top: 57px;
   }
 }
 
@@ -1566,6 +1689,15 @@ body {
   .slider-button--next {
     top: 320px;
     left: 229px;
+  }
+  .subscription__title {
+    padding-left: 0px;
+  }
+  .subscription__text {
+    text-align: start;
+  }
+  .email {
+    margin-top: 57px;
   }
 }
 
@@ -1914,6 +2046,11 @@ body {
   .stories-wrapper {
     max-width: 280px;
     padding-top: 31px;
+    padding-bottom: 0;
+  }
+  .stories-slider {
+    height: 515px;
+    min-height: 910px;
   }
   .slider-button--next {
     left: 148px;
@@ -1944,6 +2081,58 @@ body {
   .slider-text__text {
     font-size: 20px;
     line-height: 24px;
+  }
+  .subscription-wrapper {
+    padding-top: 61px;
+  }
+  .subscription {
+    min-height: 414px;
+  }
+  .subscription__title {
+    width: 280px;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.2px;
+  }
+  .subscription__text {
+    width: 280px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    padding-top: 27px;
+  }
+  .email {
+    width: 280px;
+    height: 48px;
+    margin-top: 36px;
+  }
+  .email__form {
+    padding-top: 0;
+    margin-bottom: 10px;
+  }
+  .email__button {
+    display: none;
+  }
+  .email__img {
+    margin-right: 5px;
+  }
+  .email__input {
+    width: 231px;
+    height: 48px;
+  }
+  .email__second {
+    display: block;
+    width: 280px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    background-color: #183B56;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
