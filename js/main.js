@@ -42,9 +42,9 @@ $(document).ready(function () {
     pagination: {
       el: ".swiper-pagination",
     },
-    // autoplay: {
-    //   delay: 7000,
-    // },
+    autoplay: {
+      delay: 7000,
+    },
   });
 
   // swiper-slider stories 2

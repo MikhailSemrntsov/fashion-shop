@@ -33,6 +33,8 @@
     
     &__product
       width: 240px
+    &__best
+      width: 240px
     &__more
       width: 240px
       &--text
@@ -232,12 +234,22 @@
     &__product
       width: 280px
       margin-bottom: 48px
+    &__best
+      width: 280px
+      margin-bottom: 48px
     &__more
       width: 280px
       &--text
         width: 219px
         left: 31px
-  
+  .cards-best
+    max-width: 608px
+    margin: auto
+    padding-top: 56px
+  .cards-soon
+    max-width: 608px
+    margin: auto
+    padding-top: 56px
   .customs-slider
     width: 630px;
     min-height: 415px;
@@ -297,15 +309,31 @@
       padding-top: 76px
   .stories-wrapper
     max-width: 95%;
-  .swiper-slide__wrapper 
-    width: 340px;
+  .swiper-slide
+    &__wrapper 
+      width: 320px;
+      padding-right: 0
+      padding-bottom: 150px
   .stories-slider 
     width: 100%;
+    min-height: 950px
+  .customs-slider
+    width: 550px
+  .swiper-pagination
+    padding-bottom: 30px
+  .sliders
+    &__swiper-wrapper
+    display: block
+    margin: auto;
+    width: 320px;
+  .slider
+    &__img
+      width: 100%
 @media (max-width: 576px)
   .container
     max-width: 500px
   .cards
-    &__product
+    &__product, &__best, &__soon
       width: 230px
     &__more
       width: 230px
@@ -319,6 +347,20 @@
       padding-top: 33px
       &-none480
         display: none
+  .cards
+    &__more
+      &--text
+        left: 0
+        
+  .monitoring
+    max-width: 450px
+    padding-bottom: 100px
+  .slider-button--prev
+    top: 320px;
+    left: 150px;
+  .slider-button--next
+    top: 320px;
+    left: 229px;
 @media (max-width: 480px)
   .container
     max-width: 290px
@@ -545,7 +587,8 @@
         width: 140px
         top: 85px
         left: 0
-      &--further
+        height: 0
+    &__more-further
         width: 25px
         top: 44px
   .cards-best    
@@ -580,6 +623,8 @@
       margin: auto
   .monitoring
     max-width: 280px
+    padding-bottom: 40px
+    min-height: 290px
     &__title
       font-size: 28px;
       line-height: 36px;
@@ -614,3 +659,11 @@
     display: block
     width: 280px
     min-height: 475px
+  .swiper-slide__wrapper
+    width: 270px
+    padding-bottom: 153px
+  .slider__background
+    top: 256px
+  .slider-text__text
+    font-size: 20px;
+    line-height: 24px;

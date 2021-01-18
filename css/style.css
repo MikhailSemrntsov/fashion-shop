@@ -454,7 +454,6 @@ body {
 
 .navbar__icon-close {
   color: #1565d8;
-  background-color: #1565d8;
   display: none;
 }
 
@@ -1137,6 +1136,9 @@ body {
   .cards__product {
     width: 240px;
   }
+  .cards__best {
+    width: 240px;
+  }
   .cards__more {
     width: 240px;
   }
@@ -1405,12 +1407,26 @@ body {
     width: 280px;
     margin-bottom: 48px;
   }
+  .cards__best {
+    width: 280px;
+    margin-bottom: 48px;
+  }
   .cards__more {
     width: 280px;
   }
   .cards__more--text {
     width: 219px;
     left: 31px;
+  }
+  .cards-best {
+    max-width: 608px;
+    margin: auto;
+    padding-top: 56px;
+  }
+  .cards-soon {
+    max-width: 608px;
+    margin: auto;
+    padding-top: 56px;
   }
   .customs-slider {
     width: 630px;
@@ -1489,9 +1505,26 @@ body {
     max-width: 95%;
   }
   .swiper-slide__wrapper {
-    width: 340px;
+    width: 320px;
+    padding-right: 0;
+    padding-bottom: 150px;
   }
   .stories-slider {
+    width: 100%;
+    min-height: 950px;
+  }
+  .customs-slider {
+    width: 550px;
+  }
+  .swiper-pagination {
+    padding-bottom: 30px;
+  }
+  .sliders {
+    display: block;
+    margin: auto;
+    width: 320px;
+  }
+  .slider__img {
     width: 100%;
   }
 }
@@ -1500,7 +1533,7 @@ body {
   .container {
     max-width: 500px;
   }
-  .cards__product {
+  .cards__product, .cards__best, .cards__soon {
     width: 230px;
   }
   .cards__more {
@@ -1518,6 +1551,21 @@ body {
   }
   .slider__text-none480 {
     display: none;
+  }
+  .cards__more--text {
+    left: 0;
+  }
+  .monitoring {
+    max-width: 450px;
+    padding-bottom: 100px;
+  }
+  .slider-button--prev {
+    top: 320px;
+    left: 150px;
+  }
+  .slider-button--next {
+    top: 320px;
+    left: 229px;
   }
 }
 
@@ -1800,8 +1848,9 @@ body {
     width: 140px;
     top: 85px;
     left: 0;
+    height: 0;
   }
-  .cards__more--further {
+  .cards__more-further {
     width: 25px;
     top: 44px;
   }
@@ -1843,6 +1892,8 @@ body {
   }
   .monitoring {
     max-width: 280px;
+    padding-bottom: 40px;
+    min-height: 290px;
   }
   .monitoring__title {
     font-size: 28px;
@@ -1882,6 +1933,17 @@ body {
     display: block;
     width: 280px;
     min-height: 475px;
+  }
+  .swiper-slide__wrapper {
+    width: 270px;
+    padding-bottom: 153px;
+  }
+  .slider__background {
+    top: 256px;
+  }
+  .slider-text__text {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */
