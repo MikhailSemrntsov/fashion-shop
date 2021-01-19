@@ -1191,6 +1191,89 @@ body {
   display: none;
 }
 
+.about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 522px;
+  padding-top: 110px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 100px;
+}
+
+.about-link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 22px;
+  color: #183B56;
+}
+
+.about-item {
+  padding-bottom: 24px;
+}
+
+.shop, .navigation, .services, .company, .contacts {
+  list-style: none;
+  padding-left: 0;
+}
+
+.navigation, .services, .company, .contacts {
+  width: 165px;
+}
+
+.shop {
+  max-width: 264px;
+}
+
+.shop__logo {
+  margin-bottom: 28px;
+}
+
+.shop__item {
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #5A7184;
+}
+
+.shop__link {
+  margin-right: 3px;
+}
+
+.navigation__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  color: #183B56;
+  margin-bottom: 32px;
+}
+
+.services__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  color: #183B56;
+  margin-bottom: 32px;
+}
+
+.company__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  color: #183B56;
+  margin-bottom: 32px;
+}
+
+.contacts__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  color: #183B56;
+  margin-bottom: 32px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1000px;

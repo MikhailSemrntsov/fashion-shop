@@ -6,18 +6,15 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$name = $_POST['name'];
+
 $email = $_POST['email'];
-$text = $_POST['text'];
-$file = $_FILES['myfile'];
+
 
 // Формирование самого письма
 $title = "Новый подписчик";
 $body = "
 <h2>Новое письмо</h2>
-<b>Имя:</b> $name<br>
 <b>Почта:</b> $email<br><br>
-<b>Сообщение:</b><br>$text
 ";
 
 // Настройки PHPMailer
@@ -26,13 +23,13 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
+    // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'sementsovmikha@gmail.com'; // Логин на почте
-    $mail->Password   = '!12345qwertY'; // Пароль на почте
+    $mail->Password   = 'vvqcfwvcmxxrtdbg'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('sementsovmikha@gmail.com', 'Михаил Семенцов'); // Адрес самой почты и имя отправителя
