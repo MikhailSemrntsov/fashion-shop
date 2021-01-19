@@ -40,6 +40,10 @@
       &--text
         left: 0
 
+  // about
+  .about-wrapper
+    padding-right: 20px
+    padding-left: 20px
 @media( max-width: 992px )
   .header
     padding-bottom: 50px
@@ -114,6 +118,16 @@
   .email
     margin: auto
     margin-top: 30px
+
+  // about
+  .about-wrapper
+    max-width: 900px
+    flex-wrap: wrap
+    padding-top: 47px
+    padding-left:  80px;
+    padding-right: 80px
+  .company-wrapper
+    
 @media (max-width: 768px)
   .container
     max-width: 672px
@@ -322,6 +336,46 @@
       text-align: center;
   .email    
     margin-top: 57px
+
+  // about
+  .navigation, .services, .company, .contacts
+    margin-bottom: 7px
+  .about-wrapper
+    flex-wrap: wrap
+    padding-top: 47px
+    padding-right: 20px
+    padding-left:  0px;
+    
+  .company-wrapper
+    padding-left: 294px
+  .shop
+    &__item
+      padding-left: 11px
+      &:nth-child(2)
+        margin-bottom: 28px
+  .navigation
+    &__title
+      &--text
+        margin-top: 17px;
+        padding-left: 3px;   
+        font-size: 18px
+  .services
+    &__title
+      &--text
+        margin-top: 17px;          
+        font-size: 18px
+  .company-wrapper
+    padding-left: 294px
+  .company
+    &__title
+      &--text
+        margin-top: 17px;          
+        font-size: 18px
+  .contacts
+    &__title
+      &--text
+        margin-top: 17px; 
+        font-size: 18px
 @media (max-width: 690px)
   .novelties
     &-images
@@ -360,6 +414,13 @@
   .slider
     &__img
       width: 100%
+
+  // about
+  .about-wrapper
+    padding-right: 30px;
+    padding-left: 30px;
+  .company-wrapper
+    padding-left: 0px
 @media (max-width: 576px)
   .container
     max-width: 500px
@@ -401,6 +462,15 @@
       text-align: start;
   .email    
     margin-top: 57px
+  // about
+  .about-wrapper
+    padding-right: 10px;
+    padding-left: 10px;
+  .shop
+    &__item
+      &:nth-child(2)
+        padding-left: 0
+        
 @media (max-width: 480px)
   .container
     max-width: 290px
@@ -754,4 +824,68 @@
       color: #FFFFFF
       border-radius: 8px
       border: none
-      
+
+  // about
+  .shop-wrapper
+    order: 5
+  .navigation-wrapper
+    order: 1
+  .services-wrapper
+    order: 2
+  .company-wrapper
+    order: 3
+  .contacts-wrapper
+    order: 4
+  .about-wrapper
+    padding-top: 31px
+    padding-left: 19px
+    padding-right: 0
+  .navigation, .services, .company, .contacts
+    margin-bottom: 0
+    margin-top: 14px
+  .about-item
+    padding-bottom: 15px
+  .about-link
+    font-size: 14px;
+    line-height: 20px;
+  .navigation
+    &__title 
+      margin-bottom: 20px
+      &--text
+        font-size: 16px;
+        line-height: 22px;
+        padding-left: 0
+        margin-top: 16px;
+  .services
+    &__title
+      margin-bottom: 20px;
+      &--text
+        font-size: 16px;
+        line-height: 22px;
+  .company
+    &__title
+      margin-bottom: 17px
+      &--text
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 0
+        margin-bottom: 19px
+  .contacts
+    &__title
+      margin-bottom: 19px
+      &--text
+        font-size: 16px;
+        line-height: 22px;
+  .shop-wrapper
+    text-align: center
+    padding-top: 31px
+  .shop
+    &__logo
+      margin-right: 0px
+      margin-bottom: 14px
+    &__item
+      &:nth-child(2)
+        font-size: 14px;
+        line-height: 24px;
+        width: 250px
+        margin-bottom: 22px

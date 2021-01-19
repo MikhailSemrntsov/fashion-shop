@@ -1195,7 +1195,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 522px;
+  min-height: 522px;
   padding-top: 110px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1318,6 +1318,10 @@ body {
   .cards__more--text {
     left: 0;
   }
+  .about-wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1407,6 +1411,14 @@ body {
   .email {
     margin: auto;
     margin-top: 30px;
+  }
+  .about-wrapper {
+    max-width: 900px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 47px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
@@ -1686,6 +1698,45 @@ body {
   .email {
     margin-top: 57px;
   }
+  .navigation, .services, .company, .contacts {
+    margin-bottom: 7px;
+  }
+  .about-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 47px;
+    padding-right: 20px;
+    padding-left: 0px;
+  }
+  .company-wrapper {
+    padding-left: 294px;
+  }
+  .shop__item {
+    padding-left: 11px;
+  }
+  .shop__item:nth-child(2) {
+    margin-bottom: 28px;
+  }
+  .navigation__title--text {
+    margin-top: 17px;
+    padding-left: 3px;
+    font-size: 18px;
+  }
+  .services__title--text {
+    margin-top: 17px;
+    font-size: 18px;
+  }
+  .company-wrapper {
+    padding-left: 294px;
+  }
+  .company__title--text {
+    margin-top: 17px;
+    font-size: 18px;
+  }
+  .contacts__title--text {
+    margin-top: 17px;
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 690px) {
@@ -1732,6 +1783,13 @@ body {
   }
   .slider__img {
     width: 100%;
+  }
+  .about-wrapper {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .company-wrapper {
+    padding-left: 0px;
   }
 }
 
@@ -1781,6 +1839,13 @@ body {
   }
   .email {
     margin-top: 57px;
+  }
+  .about-wrapper {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .shop__item:nth-child(2) {
+    padding-left: 0;
   }
 }
 
@@ -2216,6 +2281,93 @@ body {
     color: #FFFFFF;
     border-radius: 8px;
     border: none;
+  }
+  .shop-wrapper {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .navigation-wrapper {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .services-wrapper {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .company-wrapper {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .contacts-wrapper {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .about-wrapper {
+    padding-top: 31px;
+    padding-left: 19px;
+    padding-right: 0;
+  }
+  .navigation, .services, .company, .contacts {
+    margin-bottom: 0;
+    margin-top: 14px;
+  }
+  .about-item {
+    padding-bottom: 15px;
+  }
+  .about-link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .navigation__title {
+    margin-bottom: 20px;
+  }
+  .navigation__title--text {
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 0;
+    margin-top: 16px;
+  }
+  .services__title {
+    margin-bottom: 20px;
+  }
+  .services__title--text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .company__title {
+    margin-bottom: 17px;
+  }
+  .company__title--text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 19px;
+  }
+  .contacts__title {
+    margin-bottom: 19px;
+  }
+  .contacts__title--text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .shop-wrapper {
+    text-align: center;
+    padding-top: 31px;
+  }
+  .shop__logo {
+    margin-right: 0px;
+    margin-bottom: 14px;
+  }
+  .shop__item:nth-child(2) {
+    font-size: 14px;
+    line-height: 24px;
+    width: 250px;
+    margin-bottom: 22px;
   }
 }
 /*# sourceMappingURL=style.css.map */
