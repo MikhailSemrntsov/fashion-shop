@@ -113,9 +113,9 @@
 //     display: flex
 .slider-button--prev
   position: absolute  
-  background-image: url(../img/arrow-prev.svg)
+  // background-image: url(../img/icons/slider-prev.svg)
   background-repeat: no-repeat
-  background-size: 56px
+  background-size: 14px
   background-position: center
   background-color: transparent
   color: #05070a
@@ -125,22 +125,31 @@
   z-index: 100
   left: -4px
   top: 358px
-  border: none
+  border: 2px solid #05070a
+  fill: #05070a
+  border-radius: 50%
   outline: none
 .slider-button--next
   position: absolute  
-  background-image: url(../img/arrow-next.svg)
+  // background-image: url(../img/icons/slider-next.svg)
   background-repeat: no-repeat
-  background-size: 56px
+  background-size: 14px
   background-position: center
   background-color: transparent
   top: 358px
-  color: #959EAD;
+  color: #05070a
   width: 60px
   height: 60px
   cursor: pointer
   z-index: 100
   left: 74px
-  border: none
+  border: 2px solid #05070a
+  fill: #05070a
+  border-radius: 50%
   outline: none
-  
+.swiper-button-disabled
+  border: 2px solid #959EAD
+  fill: #959EAD
+  border-radius: 50%
+.img-svg path
+  fill: #05070a

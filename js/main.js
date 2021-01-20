@@ -34,6 +34,9 @@ $(document).ready(function () {
   // swiper-slider customs 1
 
   var customSwiper = new Swiper(".customs-slider", {
+    autoplay: {
+      delay: 7000,
+    },
     // Optional parameters
     direction: "horizontal",
     loop: true,
@@ -42,25 +45,25 @@ $(document).ready(function () {
     pagination: {
       el: ".swiper-pagination",
     },
-    autoplay: {
-      delay: 7000,
-    },
+  });
+  // остановка слайдера
+  $(".customs-slider").mouseover(function () {
+    customSwiper.autoplay.stop();
+  });
+  $(".customs-slider").mouseout(function () {
+    customSwiper.autoplay.start();
   });
 
   // swiper-slider stories 2
 
   var storiesSwiper = new Swiper(".stories-slider", {
     // Optional parameters
-    loop: true,
-
+    loop: false,
     // Navigation arrows
     navigation: {
       nextEl: ".slider-button--next",
       prevEl: ".slider-button--prev",
     },
-    // autoplay: {
-    //   delay: 7000,
-    // },
   });
 
   // Отправка данных на сервер
@@ -94,4 +97,28 @@ $(document).ready(function () {
     };
     req.send(new FormData(event.target));
   }
+});
+
+$("img.slider-button--prev").each(function () {
+  var $img = $(this);
+  var imgClass = $img.attr("class");
+  var imgURL = $img.attr("src");
+  $.get(
+    imgURL,
+    function (data) {
+      var $svg = $(data).find("svg");
+      if (typeof imgClass !== "undefined") {
+        $svg = $svg.attr("class", imgClass + " replaced-svg");
+      }
+      $svg = $svg.removeAttr("xmlns:a");
+      if (!$svg.attr("viewBox") && $svg.attr("height") && $svg.attr("width")) {
+        $svg.attr(
+          "viewBox",
+          "0 0 " + $svg.attr("height") + " " + $svg.attr("width")
+        );
+      }
+      $img.replaceWith($svg);
+    },
+    "xml"
+  );
 });
