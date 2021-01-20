@@ -1970,6 +1970,7 @@ body {
     margin: auto;
   }
   .main__heading--title {
+    width: 310px;
     font-size: 34px;
     line-height: 40px;
     letter-spacing: -0.9px;
@@ -2003,12 +2004,12 @@ body {
     margin: auto;
   }
   .advantages {
-    max-width: 480px;
+    width: 290px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    top: 424px;
-    left: 0px;
-    margin-left: 22px;
+    top: 439px;
+    left: 8px;
+    margin: auto;
   }
   .advantages__item {
     margin-right: 18px;
