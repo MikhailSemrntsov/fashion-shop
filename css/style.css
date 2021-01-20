@@ -467,6 +467,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .button__menu {
@@ -579,6 +580,8 @@ body {
   top: 43px;
   letter-spacing: 0.37px;
   border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .advantages {
@@ -1204,6 +1207,7 @@ body {
   line-height: 25px;
   color: #FFFFFF;
   cursor: pointer;
+  border: none;
 }
 
 .email__second {
@@ -1259,6 +1263,13 @@ body {
 
 .shop__link {
   margin-right: 3px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.shop__img {
+  list-style: none;
+  text-decoration: none;
 }
 
 .navigation__title {
@@ -2503,6 +2514,92 @@ body {
     line-height: 24px;
     width: 250px;
     margin-bottom: 22px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar__button:hover {
+    background-color: #1565D8;
+    color: #ffffff;
+  }
+  .navbar__menu--item:hover {
+    color: #ffffff;
+    background-color: #B3BAC5;
+    border-radius: 4px;
+  }
+  .logo:hover {
+    -webkit-transform: scale(1.2, 1.2);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.2, 1.2);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+  }
+  .main__button:hover {
+    background-color: #fff;
+    color: #183B56;
+  }
+  .novelties__link--text:hover {
+    color: #ffffff;
+    background-color: #1565D8;
+    border-radius: 4px;
+  }
+  .right:hover {
+    -webkit-transform: scale(1.5, 1.5);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.5, 1.5);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    cursor: pointer;
+  }
+  .category__text:hover {
+    color: #ffffff;
+    background-color: #B3BAC5;
+    border-radius: 4px;
+  }
+  .cards__more:hover {
+    opacity: 0.6;
+  }
+  .cards__icon:hover {
+    -webkit-transform: scale(1.5, 1.5);
+    -webkit-transform--webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.5, 1.5);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+  }
+  .email__button:hover {
+    color: #183B56;
+    background-color: #B3BAC5;
+    border-radius: 4px;
+  }
+  .slider__link:hover {
+    color: #ffffff;
+    background-color: #1565D8;
+    border-radius: 4px;
+  }
+  .shop__img:hover {
+    -webkit-transform: scale(1.2, 1.2);
+    -webkit-transform--webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.2, 1.2);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+  }
+  .about-link:hover {
+    color: #ffffff;
+    background-color: #B3BAC5;
+    border-radius: 4px;
+  }
+  .shop__img:hover {
+    -webkit-transform: scale(1.4, 1.4);
+    -webkit-transform--webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.4, 1.4);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    outline: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
