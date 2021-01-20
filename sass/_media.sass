@@ -57,6 +57,7 @@
       width: 90px
       height: 40px
 
+  // novelties
   .novelties
     &-wrapper
       display: block
@@ -71,6 +72,30 @@
       width: 670px
       margin-left: auto
       margin-right: auto
+  
+  // products
+  .products
+    padding-left: 40px;
+    padding-right: 40px;
+  .cards-wrapper
+    min-height: 920px
+  .cards
+    &__product
+      width: 180px
+      height: 200px
+    &__more
+      width: 180px
+      height: 260px
+      &--text
+        height: 0px
+        top: 130px
+    &__img
+      height: 260px
+    &__more-further
+      top: 90px
+    &__name
+      font-size: 19px;
+  // custom
   .swiper-container 
     width: 600px;
     min-height: 389px;
@@ -128,10 +153,17 @@
     padding-right: 80px
   .company-wrapper
     
+@media (max-width: 840px)
+  .products
+    padding-left: 0px;
+    padding-right: 0px;
+  .cards-wrapper
+    min-height: 920px
+ 
+
 @media (max-width: 768px)
   .container
     max-width: 672px
-
   .navbar
     display: none
     &__visible
@@ -196,7 +228,6 @@
       max-width: 728px
       min-height: 624px
       background-image: url(../img/main-background-768.jpg)
-
     &-contain
       max-width: 728px
       min-height: 624px
@@ -224,9 +255,7 @@
   .advantages
     top: 63px
     &__item
-      margin-right: 18px
-
- 
+      margin-right: 18px 
     &-wrapper
       display: block
       padding-top: 76px
@@ -263,14 +292,25 @@
     &__product
       width: 280px
       margin-bottom: 48px
+      height: 441px
     &__best
       width: 280px
       margin-bottom: 48px
     &__more
       width: 280px
+      height: 350px
       &--text
-        width: 219px
-        left: 31px
+        height: 64px
+        left: 0px
+        top: 180px
+    &__img
+      height: 350px
+    &__name
+      font-size: 24px
+   
+    &__more-further
+      top: 125px
+
   .cards-best
     max-width: 608px
     margin: auto
@@ -344,8 +384,7 @@
     flex-wrap: wrap
     padding-top: 47px
     padding-right: 20px
-    padding-left:  0px;
-    
+    padding-left:  0px;    
   .company-wrapper
     padding-left: 294px
   .shop
@@ -376,7 +415,8 @@
       &--text
         margin-top: 17px; 
         font-size: 18px
-@media (max-width: 690px)
+
+@media (max-width: 690px)  
   .novelties
     &-images
       max-width: 95%
@@ -392,6 +432,9 @@
         padding-top: 20px
       display: block
       padding-top: 76px
+    &__new-collection
+      margin-left: 20px
+      margin-right: 20px
   .stories-wrapper
     max-width: 95%;
   .swiper-slide

@@ -918,6 +918,17 @@ body {
   padding-bottom: 77px;
 }
 
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 8px;
+  background-color: #183B56;
+}
+
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+}
+
 .slider__text {
   font-family: 'HK Grotesk', sans-serif;
   font-style: normal;
@@ -1013,6 +1024,14 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #1565D8;
+}
+
+.slider__img {
+  width: 317px;
+  height: 312px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 
 .swiper-slide__wrapper {
@@ -1372,6 +1391,34 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+  .products {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .cards-wrapper {
+    min-height: 920px;
+  }
+  .cards__product {
+    width: 180px;
+    height: 200px;
+  }
+  .cards__more {
+    width: 180px;
+    height: 260px;
+  }
+  .cards__more--text {
+    height: 0px;
+    top: 130px;
+  }
+  .cards__img {
+    height: 260px;
+  }
+  .cards__more-further {
+    top: 90px;
+  }
+  .cards__name {
+    font-size: 19px;
+  }
   .swiper-container {
     width: 600px;
     min-height: 389px;
@@ -1436,6 +1483,16 @@ body {
     padding-top: 47px;
     padding-left: 80px;
     padding-right: 80px;
+  }
+}
+
+@media (max-width: 840px) {
+  .products {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .cards-wrapper {
+    min-height: 920px;
   }
 }
 
@@ -1622,6 +1679,7 @@ body {
   .cards__product {
     width: 280px;
     margin-bottom: 48px;
+    height: 441px;
   }
   .cards__best {
     width: 280px;
@@ -1629,10 +1687,21 @@ body {
   }
   .cards__more {
     width: 280px;
+    height: 350px;
   }
   .cards__more--text {
-    width: 219px;
-    left: 31px;
+    height: 64px;
+    left: 0px;
+    top: 180px;
+  }
+  .cards__img {
+    height: 350px;
+  }
+  .cards__name {
+    font-size: 24px;
+  }
+  .cards__more-further {
+    top: 125px;
   }
   .cards-best {
     max-width: 608px;
@@ -1774,6 +1843,10 @@ body {
     max-width: 100%;
     height: 350px;
     padding-top: 20px;
+  }
+  .novelties__new-collection {
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .stories-wrapper {
     max-width: 95%;
