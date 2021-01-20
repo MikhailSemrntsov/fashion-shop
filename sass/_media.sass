@@ -22,6 +22,15 @@
       max-width: 650px
       margin-left: auto
       margin-right: auto
+  .monitoring
+    padding-left: 10px;
+    padding-right: 10px;
+  .slider-button--prev
+    left: 9px
+    
+  .slider-button--next
+    left: 94px
+    
   .products
     max-width: 98%
     margin: auto
@@ -44,6 +53,13 @@
   .about-wrapper
     padding-right: 20px
     padding-left: 20px
+@media screen and ( max-width: 1006px )
+  .slider-button--prev
+    left: 9px
+    top: 423px
+  .slider-button--next
+    left: 94px
+    top: 423px
 @media( max-width: 992px )
   .header
     padding-bottom: 50px
@@ -79,8 +95,18 @@
     padding-right: 40px;
   .cards-wrapper
     min-height: 920px
+  .cards-best
+    min-height: 920px
+  .cards-soon
+    min-height: 920px
   .cards
     &__product
+      width: 180px
+      height: 200px
+    &__best
+      width: 180px
+      height: 200px
+    &__soon
       width: 180px
       height: 200px
     &__more
@@ -296,6 +322,7 @@
     &__best
       width: 280px
       margin-bottom: 48px
+      height: 441px
     &__more
       width: 280px
       height: 350px
@@ -327,6 +354,8 @@
   .customs
     &-wrapper
       padding-top: 43px;
+  .slider-text
+    padding-top: 18px
   .slider
     &__text
       padding-top: 33px
@@ -356,7 +385,7 @@
   .stories-slider 
     width: 682px
   .swiper-slide__wrapper
-    width: 303px
+    width: 309px
   .slider
     &__background
       top: 297
@@ -663,10 +692,9 @@
       &__right-down
         width: 138px
         height: 97px
-        padding-top: 0
-  
+        padding-top: 0  
     &-wrapper
-      padding-top: 0px
+      padding-top: 0px    
     &__title
       font-style: normal;
       font-weight: bold;
@@ -682,7 +710,7 @@
       line-height: 28px;
       text-align: center
     &__wrapper-text
-      width: 280px
+      width: 265px
       text-align: center
     &__link
       width: 100%
@@ -775,10 +803,14 @@
     &__name
       width: 145px
       margin: auto
+    &__img
+      height: 276px;
   .monitoring
     max-width: 280px
     padding-bottom: 40px
-    min-height: 290px
+    min-height: 290px    
+    padding-left: 0px;
+    padding-right: 0px;
     &__title
       font-size: 28px;
       line-height: 36px;
@@ -790,7 +822,6 @@
       font-size: 16px;
       line-height: 28px;
       text-align: center
-
     &__title--none320
       display: none
   .stories-wrapper
@@ -806,7 +837,6 @@
     background-size: 48px
     width: 48px
     height: 48px
-
   .slider-button--prev
     left: 85px
     top: 223px
@@ -825,6 +855,7 @@
   .slider-text__text
     font-size: 20px;
     line-height: 24px;
+
   // subscription  
   .subscription-wrapper
     padding-top: 61px   
