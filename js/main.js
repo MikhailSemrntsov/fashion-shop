@@ -65,6 +65,26 @@ $(document).ready(function () {
       prevEl: ".slider-button--prev",
     },
   });
+  // var settings = {
+  //   navigation: {
+  //     nextEl: ".slider-button--next",
+  //     prevEl: ".slider-button--prev",
+  //   },
+  //   slidesPerView: 1,
+  //   slidesPerGroup: 1,
+  //   slidesPerColumn: 2,
+  //   slidesPerColumnFill: "row",
+  //   // spaceBetween: 24,
+  //   breakpoints: {
+  //     768: {
+  //       slidesPerView: 2,
+  //       slidesPerGroup: 2,
+  //       slidesPerColumn: 1,
+  //       spaceBetween: 18,
+  //     },
+  //   },
+  // };
+  // var articlesSlider = new Swiper(".slider-button", settings);
 
   // Отправка данных на сервер
   function send(event, php) {
@@ -97,28 +117,4 @@ $(document).ready(function () {
     };
     req.send(new FormData(event.target));
   }
-});
-
-$("img.slider-button--prev").each(function () {
-  var $img = $(this);
-  var imgClass = $img.attr("class");
-  var imgURL = $img.attr("src");
-  $.get(
-    imgURL,
-    function (data) {
-      var $svg = $(data).find("svg");
-      if (typeof imgClass !== "undefined") {
-        $svg = $svg.attr("class", imgClass + " replaced-svg");
-      }
-      $svg = $svg.removeAttr("xmlns:a");
-      if (!$svg.attr("viewBox") && $svg.attr("height") && $svg.attr("width")) {
-        $svg.attr(
-          "viewBox",
-          "0 0 " + $svg.attr("height") + " " + $svg.attr("width")
-        );
-      }
-      $img.replaceWith($svg);
-    },
-    "xml"
-  );
 });

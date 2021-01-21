@@ -111,33 +111,32 @@
 //     height: 475px
 //   &__swiper-wrapper
 //     display: flex
-.slider-button--prev
+.slider-button--prev 
   position: absolute  
   // background-image: url(../img/icons/slider-prev.svg)
-  background-repeat: no-repeat
-  background-size: 14px
-  background-position: center
+  // background-repeat: no-repeat
+  // background-size: 14px
+  // background-position: center
   background-color: transparent
-  color: #05070a
+  
   width: 60px
   height: 60px
   cursor: pointer
   z-index: 100
   left: -4px
   top: 358px
-  border: 2px solid #05070a
-  fill: #05070a
+  border: 2px solid #05070a  
   border-radius: 50%
   outline: none
 .slider-button--next
   position: absolute  
   // background-image: url(../img/icons/slider-next.svg)
-  background-repeat: no-repeat
-  background-size: 14px
-  background-position: center
+  // background-repeat: no-repeat
+  // background-size: 14px
+  // background-position: center
   background-color: transparent
   top: 358px
-  color: #05070a
+  // color: #05070a
   width: 60px
   height: 60px
   cursor: pointer
@@ -147,9 +146,36 @@
   fill: #05070a
   border-radius: 50%
   outline: none
+.slider-button__prev 
+  fill: #1565D8
+  // border: 2px solid #05070a  
+  // border-radius: 50%
+.slider-button__next 
+  fill: #1565D8
+  // border: 2px solid #05070a  
+  // border-radius: 50%
 .swiper-button-disabled
   border: 2px solid #959EAD
   fill: #959EAD
-  border-radius: 50%
-.img-svg path
-  fill: #05070a
+  // border-radius: 50%
+.button-prev
+  fill: #183B56
+.button-next
+  fill: #183B56
+.icon-prev    
+  position: absolute;
+  width: 14px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 100;
+  left: 21px;
+  top: 20px;
+.icon-next    
+  position: absolute;
+  width: 14px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 100;
+  left: 21px;
+  top: 20px;
+ 
