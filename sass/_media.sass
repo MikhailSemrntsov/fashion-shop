@@ -925,20 +925,27 @@
       text-align: center;
       padding-top: 27px
   .email
+    display: none
     width: 280px
     height: 48px
     margin-top: 36px
     &__form
+      display: none
       padding-top: 0
       margin-bottom: 10px
     &__button
       display: none
     &__img
+      display: none
       margin-right: 5px
     &__input
+      display: none
       width: 231px
       height: 48px
-    &__second
+      font-size: 16px;
+      line-height: 22px;
+      color: #959EAD;
+    &__second      
       display: block
       width: 280px
       height: 48px
@@ -950,7 +957,51 @@
       color: #FFFFFF
       border-radius: 8px
       border: none
-
+      margin-top: 10px
+  label
+    position: static
+  .email-second
+    display: block
+    background-color: #fff
+    border-radius: 8px
+    width: 280px
+    height: 48px
+    margin-top: 36px
+    margin-left: 5px
+    
+    &__form
+      padding-top: 0
+      margin-bottom: 10px
+      border: none
+    &__img
+      margin-right: 5px
+      margin-left: 20px
+    &__input
+      border: none
+      width: 231px
+      height: 48px
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #959EAD;
+  .email__second
+    // display: block
+    // width: 280px
+    // height: 48px
+    // font-weight: bold;
+    // font-size: 18px;
+    // line-height: 25px;
+    // text-align: center;
+    // background-color: #183B56
+    // color: #FFFFFF
+    // border-radius: 8px
+    // border: none
+  .icon-next
+    left: 16px;
+    top: 14px;
+  .icon-prev
+    left: 16px;
+    top: 14px;
   // about
   .shop-wrapper
     order: 5
@@ -968,7 +1019,7 @@
     padding-right: 0
   .navigation, .services, .company, .contacts
     margin-bottom: 0
-    margin-top: 14px
+    margin-top: 0px
   .about-item
     padding-bottom: 15px
   .about-link
@@ -982,19 +1033,22 @@
         line-height: 22px;
         padding-left: 0
         margin-top: 16px;
+  .navigation__link
+    padding-left: 0
   .services
     &__title
       margin-bottom: 20px;
       &--text
         font-size: 16px;
         line-height: 22px;
+        margin-top: -32px
   .company
     &__title
       margin-bottom: 17px
       &--text
         font-size: 16px;
         line-height: 22px;
-        margin-top: 0
+        margin-top: -32px
         margin-bottom: 19px
   .contacts
     &__title
@@ -1002,9 +1056,10 @@
       &--text
         font-size: 16px;
         line-height: 22px;
+        margin-top: -32px
   .shop-wrapper
     text-align: center
-    padding-top: 31px
+    padding-top: 0px
     
   .shop
     &__logo

@@ -1133,7 +1133,7 @@ body {
   z-index: 100;
   left: -4px;
   top: 358px;
-  border: 2px solid #05070a;
+  border: 2px solid #183B56;
   border-radius: 50%;
   outline: none;
 }
@@ -1147,8 +1147,8 @@ body {
   cursor: pointer;
   z-index: 100;
   left: 74px;
-  border: 2px solid #05070a;
-  fill: #05070a;
+  border: 2px solid #183B56;
+  fill: #183B56;
   border-radius: 50%;
   outline: none;
 }
@@ -1281,11 +1281,19 @@ body {
   color: red;
 }
 
+.invalid-form {
+  color: red;
+}
+
 label {
   position: absolute;
   top: 60px;
   font-weight: bold;
   left: 0;
+}
+
+.email-second {
+  display: none;
 }
 
 .about-wrapper {
@@ -2530,11 +2538,13 @@ label {
     padding-top: 27px;
   }
   .email {
+    display: none;
     width: 280px;
     height: 48px;
     margin-top: 36px;
   }
   .email__form {
+    display: none;
     padding-top: 0;
     margin-bottom: 10px;
   }
@@ -2542,11 +2552,16 @@ label {
     display: none;
   }
   .email__img {
+    display: none;
     margin-right: 5px;
   }
   .email__input {
+    display: none;
     width: 231px;
     height: 48px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #959EAD;
   }
   .email__second {
     display: block;
@@ -2560,6 +2575,45 @@ label {
     color: #FFFFFF;
     border-radius: 8px;
     border: none;
+    margin-top: 10px;
+  }
+  label {
+    position: static;
+  }
+  .email-second {
+    display: block;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 280px;
+    height: 48px;
+    margin-top: 36px;
+    margin-left: 5px;
+  }
+  .email-second__form {
+    padding-top: 0;
+    margin-bottom: 10px;
+    border: none;
+  }
+  .email-second__img {
+    margin-right: 5px;
+    margin-left: 20px;
+  }
+  .email-second__input {
+    border: none;
+    width: 231px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #959EAD;
+  }
+  .icon-next {
+    left: 16px;
+    top: 14px;
+  }
+  .icon-prev {
+    left: 16px;
+    top: 14px;
   }
   .shop-wrapper {
     -webkit-box-ordinal-group: 6;
@@ -2593,7 +2647,7 @@ label {
   }
   .navigation, .services, .company, .contacts {
     margin-bottom: 0;
-    margin-top: 14px;
+    margin-top: 0px;
   }
   .about-item {
     padding-bottom: 15px;
@@ -2611,12 +2665,16 @@ label {
     padding-left: 0;
     margin-top: 16px;
   }
+  .navigation__link {
+    padding-left: 0;
+  }
   .services__title {
     margin-bottom: 20px;
   }
   .services__title--text {
     font-size: 16px;
     line-height: 22px;
+    margin-top: -32px;
   }
   .company__title {
     margin-bottom: 17px;
@@ -2624,7 +2682,7 @@ label {
   .company__title--text {
     font-size: 16px;
     line-height: 22px;
-    margin-top: 0;
+    margin-top: -32px;
     margin-bottom: 19px;
   }
   .contacts__title {
@@ -2633,10 +2691,11 @@ label {
   .contacts__title--text {
     font-size: 16px;
     line-height: 22px;
+    margin-top: -32px;
   }
   .shop-wrapper {
     text-align: center;
-    padding-top: 31px;
+    padding-top: 0px;
   }
   .shop__logo {
     margin-right: 0px;

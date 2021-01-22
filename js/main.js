@@ -117,22 +117,21 @@ $(document).ready(function () {
       errorClass: "invalid__form",
       messages: {
         email: {
-          required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com",
+          required: "Укажите свой email",
+          email: "Ваш email должен быть в формате name@domain.com",
         },
       },
     });
   });
-  // $(".email__form").validate({
-  //   errorElement: "span",
-  // });
-  // $("email__form").validate({
-  //   errorClass: "invalid",
-  //   messages: {
-  //     email: {
-  //       required: "We need your email address to contact you",
-  //       email: "Your email address must be in the format of name@domain.com",
-  //     },
-  //   },
-  // });
+  $(".email-second__form").each(function () {
+    $(this).validate({
+      errorClass: "invalid__form",
+      messages: {
+        email: {
+          required: "Укажите свой email",
+          email: "Ваш email должен быть в формате name@domain.com",
+        },
+      },
+    });
+  });
 });
