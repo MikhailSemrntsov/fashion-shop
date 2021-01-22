@@ -1,8 +1,12 @@
 $(document).ready(function () {
   var menuButton = document.querySelector(".button__menu");
   menuButton.addEventListener("click", function () {
-    console.log("клик по кнопке меню");
-    document.querySelector(".navbar").classList.toggle("navbar__visible");
+    document.querySelector(".navbar").classList.add("navbar__visible");
+  });
+  // disable scrolling 'body' when the menu is open
+  var nonScroll = document.querySelector(".button__menu");
+  nonScroll.addEventListener("click", function () {
+    document.querySelector("body").classList.add("body-overflow");
   });
 
   var closeMenuButton = $(".navbar__icon-close");
@@ -11,6 +15,14 @@ $(document).ready(function () {
   function closeMenu() {
     var menuClose = $(".navbar");
     menuClose.removeClass("navbar__visible");
+  }
+  // enable scrolling 'body' when the menu is closed
+  var haveScroll = $(".navbar__icon-close");
+  haveScroll.on("click", noScroll);
+  console.log("клик по кнопке меню");
+  function noScroll() {
+    var menuClosed = $("body");
+    menuClosed.removeClass("body-overflow");
   }
 
   // tabs
@@ -96,37 +108,5 @@ $(document).ready(function () {
       alert("Ошибка отправки запроса");
     };
     req.send(new FormData(event.target));
-  }
-
-  // //  остановка прокрутки body
-  // var menuButton = document.querySelector(".button__menu");
-  // menuButton.addEventListener("click", function () {
-  //   // console.log("клик по кнопке меню");
-  //   document.querySelector("body").classList.addClass("body-overflow");
-  // });
-
-  // var closeButton = $(".navbar__icon-close");
-  // closeButton.on("click", closedMenu);
-
-  // function closedMenu() {
-  //   var menuClose = $(".body");
-  //   menuClose.removeClass("body-overflow");
-  // }
-  function openModal() {
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    var body = $("body");
-    modalOverlay.addClass("modal__overlay--visible");
-    modalDialog.addClass("modal__dialog--visible");
-    body.addClass("body-overflow");
-  }
-  function closeModal(event) {
-    event.preventDefault();
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    var body = $("body");
-    modalOverlay.removeClass("modal__overlay--visible");
-    modalDialog.removeClass("modal__dialog--visible");
-    body.removeClass("body-overflow");
   }
 });
