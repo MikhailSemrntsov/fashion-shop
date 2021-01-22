@@ -1618,9 +1618,9 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
+    top: 19px;
+    right: 19px;
+    bottom: 0;
     z-index: 60;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1629,7 +1629,8 @@ body {
         -ms-flex-pack: end;
             justify-content: end;
     background-color: #ffffff;
-    height: 83%;
+    height: 290px;
+    max-width: 490px;
     background: #FFFFFF;
     -webkit-box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16);
@@ -1641,19 +1642,25 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: 0;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 15px;
   }
   .navbar__icon-close {
     display: block;
+    background-color: #fff;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
   }
   .navbar-menu__wrapper {
-    padding-top: 20px;
+    padding-top: 15px;
   }
   .navbar__button {
-    width: 250px;
-    height: 55px;
+    width: 335px;
+    height: 45px;
     cursor: pointer;
   }
   .button__menu {
@@ -2108,6 +2115,8 @@ body {
     padding-top: 16px;
   }
   .navbar__visible {
+    left: 0;
+    right: 0;
     top: 10px;
     width: 304px;
     height: 322px;
@@ -2124,7 +2133,7 @@ body {
     padding-bottom: 36px;
   }
   .navbar-menu__wrapper {
-    padding-top: 9px;
+    padding-top: 36px;
   }
   .navbar__menu {
     margin-bottom: 0px;
@@ -2143,6 +2152,8 @@ body {
   }
   .navbar__icon-close {
     padding-top: 12px;
+    right: 15px;
+    top: 0;
   }
   .navbar__button {
     width: 256px;

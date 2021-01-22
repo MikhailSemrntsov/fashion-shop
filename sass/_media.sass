@@ -209,31 +209,39 @@
       display: flex
       flex-direction: column
       position: fixed
-      left: 0
-      top: 0
-      right: 0      
+      
+      top: 19px
+      right: 19px
+      bottom: 0
       z-index: 60
       align-items: center
       justify-content: end
       background-color: #ffffff
-      height: 83%
+      height: 290px
+      max-width: 490px
       background: #FFFFFF;
       box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16);
-      overflow: auto      
+      overflow: auto
     &__menu
       flex-direction: column
       margin-left: 0
-      margin-bottom: 20px
-      margin-top: 10px
-      font-size: 20px
-    &__icon-close
-      display: block
+      margin-bottom: 10px
+      margin-top: 0px
+      font-size: 15px
+    &__icon-close      
+      display: block      
+      background-color: #fff
+      width: 24px
+      height: 24px
+      position: absolute
+      top: 15px
+      right: 30px
     &-menu
       &__wrapper
-        padding-top: 20px
+        padding-top: 15px
     &__button
-      width: 250px
-      height: 55px
+      width: 335px
+      height: 45px
       cursor: pointer
   .button
     &__menu
@@ -426,7 +434,8 @@
     padding-top: 62px
     padding-right: 20px
     padding-left:  0px;    
-  .company-wrapper    
+  .company-wrapper
+    
   .shop
     margin-top: 0
     &__item
@@ -580,6 +589,9 @@
     padding-top: 200px 
     text-align: center
     margin-left: 0
+
+
+
 @media (max-width: 480px)
   .container
     max-width: 290px
@@ -588,6 +600,8 @@
     padding-top: 16px
   .navbar
     &__visible
+      left: 0
+      right: 0
       top: 10px
       width: 304px
       height: 322px
@@ -600,7 +614,7 @@
       padding-bottom: 36px
     &-menu
       &__wrapper
-        padding-top: 9px
+        padding-top: 36px
     &__menu
       margin-bottom: 0px
       margin-top: 0
@@ -613,6 +627,8 @@
         line-height: 22px;
     &__icon-close
       padding-top: 12px
+      right: 15px
+      top: 0
     &__button
       width: 256px
       height: 40px
