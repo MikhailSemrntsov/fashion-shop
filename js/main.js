@@ -109,4 +109,30 @@ $(document).ready(function () {
     };
     req.send(new FormData(event.target));
   }
+
+  // валидация форм почты
+  // $(".email__form").validate();
+  $(".email__form").each(function () {
+    $(this).validate({
+      errorClass: "invalid__form",
+      messages: {
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+      },
+    });
+  });
+  // $(".email__form").validate({
+  //   errorElement: "span",
+  // });
+  // $("email__form").validate({
+  //   errorClass: "invalid",
+  //   messages: {
+  //     email: {
+  //       required: "We need your email address to contact you",
+  //       email: "Your email address must be in the format of name@domain.com",
+  //     },
+  //   },
+  // });
 });

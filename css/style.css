@@ -1244,6 +1244,7 @@ body {
   float: right;
   padding-top: 4px;
   padding-right: 4px;
+  position: relative;
 }
 
 .email__img {
@@ -1274,6 +1275,17 @@ body {
 
 .email__second {
   display: none;
+}
+
+.invalid__form {
+  color: red;
+}
+
+label {
+  position: absolute;
+  top: 60px;
+  font-weight: bold;
+  left: 0;
 }
 
 .about-wrapper {
