@@ -49,6 +49,9 @@
       &--text
         left: 0
 
+  .subscription-info
+    padding-left: 20px
+
   // about
   .about-wrapper
     padding-right: 20px
@@ -172,13 +175,20 @@
 
   // about
   .about-wrapper
-    max-width: 900px
-    flex-wrap: wrap
+    // max-width: 900px
+    // flex-wrap: wrap
     padding-top: 47px
-    padding-left:  80px;
-    padding-right: 80px
+    // padding-left:  80px;
+    // padding-right: 80px
+    display: grid
+    grid-template-columns: 255px 165px 165px
+    grid-template-rows: 262px 262px
+    grid-row-gap: 48px
+    grid-column-gap: 28px
   .company-wrapper
-  .shop-wrapper
+    grid-column: 2 
+  .contacts-wrapper
+    grid-column: 3
     
     
 @media (max-width: 840px)
@@ -208,6 +218,9 @@
       justify-content: end
       background-color: #ffffff
       height: 100%
+      background: #FFFFFF;
+      box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16);
+      overflow: auto
     &__menu
       flex-direction: column
       margin-left: 0
@@ -335,11 +348,9 @@
     &__img
       height: 350px
     &__name
-      font-size: 24px
-   
+      font-size: 24px   
     &__more-further
       top: 125px
-
   .cards-best
     max-width: 608px
     margin: auto
@@ -391,7 +402,6 @@
   .slider
     &__background
       top: 297
-
   // subscription
   .subscription-wrapper      
       padding-top: 67px
@@ -407,45 +417,51 @@
       text-align: center;
   .email    
     margin-top: 57px
-
   // about
   .navigation, .services, .company, .contacts
     margin-bottom: 7px
+    margin-top: 0
   .about-wrapper
-    flex-wrap: wrap
-    padding-top: 47px
+    // flex-wrap: wrap
+    padding-top: 62px
     padding-right: 20px
     padding-left:  0px;    
   .company-wrapper
-    padding-left: 294px
+    
   .shop
+    margin-top: 0
     &__item
       padding-left: 11px
       &:nth-child(2)
         margin-bottom: 28px
   .navigation
+    margin-top: 0
     &__title
       &--text
-        margin-top: 17px;
-        padding-left: 3px;   
+        margin-top: 2px;
+        padding-left: 5px;   
         font-size: 18px
+    &__link
+      padding-left: 5px
   .services
     &__title
       &--text
-        margin-top: 17px;          
+        margin-top: 2px;          
         font-size: 18px
   .company-wrapper
-    padding-left: 294px
+    
   .company
+    padding-left: 5px
     &__title
       &--text
-        margin-top: 17px;          
+        margin-top: 0px;          
         font-size: 18px
   .contacts
     &__title
       &--text
-        margin-top: 17px; 
+        margin-top: 0px; 
         font-size: 18px
+
 
 @media (max-width: 690px)  
   .novelties
@@ -488,13 +504,25 @@
   .slider
     &__img
       width: 100%
-
   // about
   .about-wrapper
-    padding-right: 30px;
-    padding-left: 30px;
+    display: flex
+    flex-wrap: wrap
+    padding-right: 85px;
+    padding-left: 85px;
   .company-wrapper
     padding-left: 0px
+  .shop-wrapper
+    order: 5
+  .navigation-wrapper
+    order: 1
+  .services-wrapper
+    order: 2
+  .company-wrapper
+    order: 3
+  .contacts-wrapper
+    order: 4
+
 @media (max-width: 576px)
   .container
     max-width: 500px
@@ -516,8 +544,7 @@
   .cards
     &__more
       &--text
-        left: 0
-        
+        left: 0        
   .monitoring
     max-width: 450px
     padding-bottom: 100px
@@ -527,8 +554,9 @@
   .slider-button--next
     top: 320px;
     left: 229px;
-
-  // subscription     
+  // subscription 
+  .subscription-info
+    padding-left: 0px  
   .subscription    
     &__title      
       padding-left: 0px
@@ -544,7 +572,15 @@
     &__item
       &:nth-child(2)
         padding-left: 0
-        
+  .shop-wrapper
+  // thankyou
+  .back-wrapper
+      margin: auto
+      width: 265px
+  .thankyou  
+    padding-top: 200px 
+    text-align: center
+    margin-left: 0
 @media (max-width: 480px)
   .container
     max-width: 290px
@@ -602,9 +638,7 @@
         top: 0
         bottom: 0
         left: 0
-
         background-color: #E8EAE9
-
     &-contain
       max-width: 480px
       min-height: 898px

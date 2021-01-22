@@ -65,26 +65,6 @@ $(document).ready(function () {
       prevEl: ".slider-button--prev",
     },
   });
-  // var settings = {
-  //   navigation: {
-  //     nextEl: ".slider-button--next",
-  //     prevEl: ".slider-button--prev",
-  //   },
-  //   slidesPerView: 1,
-  //   slidesPerGroup: 1,
-  //   slidesPerColumn: 2,
-  //   slidesPerColumnFill: "row",
-  //   // spaceBetween: 24,
-  //   breakpoints: {
-  //     768: {
-  //       slidesPerView: 2,
-  //       slidesPerGroup: 2,
-  //       slidesPerColumn: 1,
-  //       spaceBetween: 18,
-  //     },
-  //   },
-  // };
-  // var articlesSlider = new Swiper(".slider-button", settings);
 
   // Отправка данных на сервер
   function send(event, php) {
@@ -116,5 +96,37 @@ $(document).ready(function () {
       alert("Ошибка отправки запроса");
     };
     req.send(new FormData(event.target));
+  }
+
+  // //  остановка прокрутки body
+  // var menuButton = document.querySelector(".button__menu");
+  // menuButton.addEventListener("click", function () {
+  //   // console.log("клик по кнопке меню");
+  //   document.querySelector("body").classList.addClass("body-overflow");
+  // });
+
+  // var closeButton = $(".navbar__icon-close");
+  // closeButton.on("click", closedMenu);
+
+  // function closedMenu() {
+  //   var menuClose = $(".body");
+  //   menuClose.removeClass("body-overflow");
+  // }
+  function openModal() {
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    var body = $("body");
+    modalOverlay.addClass("modal__overlay--visible");
+    modalDialog.addClass("modal__dialog--visible");
+    body.addClass("body-overflow");
+  }
+  function closeModal(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    var body = $("body");
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+    body.removeClass("body-overflow");
   }
 });
