@@ -1,4 +1,3 @@
-
 <?php
 // Файлы phpmailer
 require 'phpmailer/PHPMailer.php';
@@ -7,16 +6,33 @@ require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 
+$name = $_POST['name'];
+$phone = $_POST['phone'];
 $email = $_POST['email'];
 
 
 // Формирование самого письма
-$title = "Новый подписчик";
-$body = "
-<h2>Новое письмо</h2>
+// $title = "Новый подписчик";
+// $body = "
+// <h2>Новое письмо</h2>
+// <b>Почта:</b> $email<br><br>
+// ";
+
+if (isset($_POST['email1'])) {
+    $title = "Новый подписчик";
+    $body = "
+    <h2>Новое письмо</h2>
+    <b>Почта:</b> $email<br><br>
+";
+} else if (isset($_POST['Modal'])) {
+    $title = "Вход";
+    $body = "
+    <h2>Спасибо</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон:</b> $phone<br>
 <b>Почта:</b> $email<br><br>
 ";
-
+}
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
@@ -53,6 +69,5 @@ else {$result = "error";}
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
-
-// Отображение результата
-header('location: thankyou.html');
+header('Location: thankyou.html');
+?>

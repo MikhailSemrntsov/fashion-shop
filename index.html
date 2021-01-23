@@ -9,7 +9,7 @@
     <title>Fashion shop</title>
   </head>
   <body>
-    <header class="header">
+    <header id="menu" class="header">
       <div class="container">
         <div class="logo-header_media">
           <a href="#" class="logo-header">
@@ -45,25 +45,35 @@
           <div class="navbar-menu navbar-menu__wrapper">
             <ul class="navbar__menu">
               <li class="navbar__menu navbar__menu--item">
-                <a href="#" class="navbar__menu navbar__menu--link">Главная</a>
+                <a href="#main" class="navbar__menu navbar__menu--link"
+                  >Главная</a
+                >
               </li>
               <li class="navbar__menu navbar__menu--item">
-                <a href="#" class="navbar__menu navbar__menu--link">Новинки</a>
+                <a href="#novelties" class="navbar__menu navbar__menu--link"
+                  >Новинки</a
+                >
               </li>
               <li class="navbar__menu navbar__menu--item">
-                <a href="#" class="navbar__menu navbar__menu--link">Тренды</a>
+                <a href="#trends" class="navbar__menu navbar__menu--link"
+                  >Тренды</a
+                >
               </li>
               <li class="navbar__menu navbar__menu--item">
-                <a href="#" class="navbar__menu navbar__menu--link">Отзывы</a>
+                <a href="#call-back" class="navbar__menu navbar__menu--link"
+                  >Отзывы</a
+                >
               </li>
               <li class="navbar__menu navbar__menu--item">
-                <a href="#" class="navbar__menu navbar__menu--link">Контакты</a>
+                <a href="#contucts" class="navbar__menu navbar__menu--link"
+                  >Контакты</a
+                >
               </li>
             </ul>
             <!-- /.navbar-menu -->
           </div>
           <!-- /.navbar-menu__wrapper -->
-          <button class="navbar__button">Войти</button>
+          <button data-toggle="modal" class="navbar__button">Войти</button>
         </div>
         <!-- /.navbar -->
 
@@ -71,7 +81,7 @@
       </div>
       <!-- /.container -->
     </header>
-    <section class="main">
+    <section id="main" class="main">
       <div class="main-container">
         <div class="main-contain">
           <div class="main__tagline">
@@ -124,7 +134,7 @@
     </section>
     <!-- /.main -->
     <section class="novelties">
-      <div class="container">
+      <div id="novelties" class="container">
         <div class="novelties-wrapper">
           <div class="novelties-images">
             <div class="novelties-images__left">
@@ -180,7 +190,7 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="products">
+    <section id="trends" class="products">
       <div class="products-container">
         <div class="products-wrapper">
           <div class="trends">
@@ -890,7 +900,7 @@
       <!-- /.container -->
     </section>
     <!-- /.products -->
-    <div class="customs">
+    <div id="call-back" class="customs">
       <div class="container">
         <div class="customs-wrapper">
           <div class="quote">
@@ -1196,7 +1206,7 @@
                 placeholder="Ваш Email"
                 required
               />
-              <button class="email__button" type="submit">Подписаться</button>
+              <button name="email1" class="email__button" type="submit">Подписаться</button>
             </form>
           </div>
           <!-- /.email-->
@@ -1215,7 +1225,9 @@
                 placeholder="Ваш Email"
                 required
               />
-              <button class="email__second" type="submit">Подписаться</button>
+              <button name="email1" class="email-second__second" type="submit">
+                Подписаться
+              </button>
             </form>
           </div>
           <!-- /.email-second -->
@@ -1225,7 +1237,7 @@
       <!-- /.subscription-container -->
     </section>
     <!-- /.subscription -->
-    <footer class="about">
+    <footer id="contucts" class="about">
       <div class="container">
         <div class="about-wrapper">
           <div class="shop-wrapper">
@@ -1399,9 +1411,62 @@
       </div>
       <!-- /.container -->
     </footer>
+    <div id="to-top" class="to-top">
+      <a href="#menu">
+        <img
+          class="to-top__img"
+          src="./img/icons/totop.png"
+          alt="icon: image to top"
+        />
+      </a>
+    </div>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img class="modal__img" src="./img/icons/icon-close.svg" alt="icon: close" />
+        </a>
+        <h3 lang="en" class="modal__title modal__title--mb-message" lang="en">Укажите Ваши данные</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input
+            type="text"
+            minlength="2"
+            class="input modal__input"
+            placeholder="Ваше имя*"
+            name="name"
+            required
+          />
+          <input
+            type="tel"
+            minlength="18"
+            class="input modal__input phone"
+            placeholder="Ваш номер телефона*"
+            name="phone"
+            required
+          />
+          <input
+            type="Ваш email*"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <button
+            class="button modal__button"
+            name="Modal"
+            type="submit"
+          >
+            Отправить
+          </button>
+
+          
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>   
     <script src="./js/main.js"></script>
   </body>
 </html>

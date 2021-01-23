@@ -19,11 +19,46 @@ $(document).ready(function () {
   // enable scrolling 'body' when the menu is closed
   var haveScroll = $(".navbar__icon-close");
   haveScroll.on("click", noScroll);
-  console.log("клик по кнопке меню");
+  // console.log("клик по кнопке меню");
   function noScroll() {
     var menuClosed = $("body");
     menuClosed.removeClass("body-overflow");
   }
+
+  // модальное окно
+  var modalButton = $("[data-toggle=modal]");
+  var closeModalButton = $(".modal__close");
+  modalButton.on("click", openModal);
+  closeModalButton.on("click", closeModal);
+  // var modalButton = document.querySelector(".navbar__button");
+  // var closeModalButton = document.querySelector(".modal__close");
+  // modalButton.addEventListener("click", openModal);
+  // closeModalButton.addEventListener("click", closeModal);
+
+  function openModal() {
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    var body = $("body");
+    modalOverlay.addClass("modal__overlay--visible");
+    modalDialog.addClass("modal__dialog--visible");
+    body.addClass("body-overflow");
+  }
+  function closeModal(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    var body = $("body");
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+    body.removeClass("body-overflow");
+  }
+  // удаление класса с body при переходе на thankyou.html
+  // var goScroll = $(".modal__button");
+  // goScroll.on("click", goScrolled);
+
+  // function goScrolled() {
+  //   var menuClose = $("body");
+  //   menuClose.removeClass("body-overflow");
 
   // tabs
 
@@ -87,7 +122,7 @@ $(document).ready(function () {
     req.onload = function () {
       if (req.status >= 200 && req.status < 400) {
         json = JSON.parse(this.response); // Ебанный internet explorer 11
-        console.log(json);
+        // console.log(json);
 
         // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
         if (json.result == "success") {
@@ -134,4 +169,29 @@ $(document).ready(function () {
       },
     });
   });
+
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid-form",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "the name must be at least 2 letters",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "please specify your phone number",
+        },
+      },
+    });
+  });
+  window.onscroll = function vverh() {
+    document.getElementById("to-top").style.display =
+      window.pageYOffset > "300" ? "block" : "none";
+  };
+  // $(".phone").mask("+7 (000) 000-00-00");
+  // AOS.init();
 });
