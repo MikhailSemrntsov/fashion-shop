@@ -27,7 +27,7 @@ if (isset($_POST['email1'])) {
 } else if (isset($_POST['Modal'])) {
     $title = "Вход";
     $body = "
-    <h2>Спасибо</h2>
+    <h2>Новый посетитель</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br>
 <b>Почта:</b> $email<br><br>

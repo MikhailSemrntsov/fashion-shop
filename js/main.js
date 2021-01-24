@@ -52,13 +52,6 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
     body.removeClass("body-overflow");
   }
-  // удаление класса с body при переходе на thankyou.html
-  // var goScroll = $(".modal__button");
-  // goScroll.on("click", goScrolled);
-
-  // function goScrolled() {
-  //   var menuClose = $("body");
-  //   menuClose.removeClass("body-overflow");
 
   // tabs
 
@@ -184,14 +177,17 @@ $(document).ready(function () {
         },
         phone: {
           required: "please specify your phone number",
+          minlength: "the phone must be 10 digits long",
         },
       },
     });
   });
+  // кнопка при  скролле
   window.onscroll = function vverh() {
     document.getElementById("to-top").style.display =
       window.pageYOffset > "300" ? "block" : "none";
   };
-  // $(".phone").mask("+7 (000) 000-00-00");
+  $(".phone").mask("+7 (000) 000-00-00");
+  // $(".phone").mask("+7 (999) 999-99-99");
   // AOS.init();
 });

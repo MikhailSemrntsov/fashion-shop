@@ -2895,7 +2895,25 @@ label {
   }
   .modal__dialog--visible {
     width: 80%;
-    height: 80%;
+    height: 285px;
+    top: 10px;
+    left: 10%;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  .modal__title {
+    font-size: 16px;
+  }
+  .modal__title--mb-message {
+    margin-bottom: 0;
+  }
+  .modal__input {
+    height: 40px;
+  }
+  .modal__button {
+    min-height: 0px;
+    height: 40px;
+    padding: 12px 18px 11px 20px;
   }
 }
 
