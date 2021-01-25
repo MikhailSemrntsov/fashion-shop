@@ -79,11 +79,13 @@ $(document).ready(function () {
     },
     // Optional parameters
     direction: "horizontal",
+    type: "bullets",
     loop: true,
-
+    clickable: true,
     // If we need pagination
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
   });
   // остановка слайдера
@@ -187,6 +189,7 @@ $(document).ready(function () {
     document.getElementById("to-top").style.display =
       window.pageYOffset > "300" ? "block" : "none";
   };
+
   $(".phone").mask("+7 (000) 000-00-00");
   // $(".phone").mask("+7 (999) 999-99-99");
   // AOS.init();
